@@ -1,15 +1,22 @@
 package Sample_Programs;
 
+import java.util.Scanner;
+
 public class AddNumReturntype {
     static int add()
     {
-        int a=10;
-        int b=20;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the of a");
+        int a= sc.nextInt();
+        Scanner sc1=new Scanner(System.in);
+        System.out.println("Enter the of b");
+        int b= sc1.nextInt();
+
         int c=a+b;
         return c;
     }
     public static void main(String[]args){
         int x=add();
-        System.out.println(x);
+        System.out.println("the result of x :"+x)  ;
     }
 }
